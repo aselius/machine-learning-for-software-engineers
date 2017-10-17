@@ -1,4 +1,4 @@
-# 탑-다운 공법을 이용한 학법: 소프트웨어 엔지니어를 위한 기계학습 가이드라인
+# 탑-다운 어프로치를 이용한 소프트웨어 엔지니어를 위한 기계학습 공부법
 
 <p align="center">
   <a href="https://github.com/ZuzooVn/machine-learning-for-software-engineers">
@@ -14,33 +14,31 @@
 
 본 문서는 [Google Interview University](https://github.com/jwasham/google-interview-university)에서 영감을 받아 작성되었습니다.
 
-Translations: [Brazilian Portuguese](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README-pt-BR.md) | [中文版本](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README-zh-CN.md) | [한글](https://github.com/ZuzooVn/machine-learning-for-software-engineers/blob/master/README-kr.md)
-
 ## 본 문서에 대하여
 
-본 문서는 모바일 앱 개발자였던 제가 기계학습(머신러닝) 엔지니어로 커리어 전환을 하는 과정에서 개안해낸 다개월에 걸쳐 기계학습에 대해 배우는 학습방안입니다.
+이 문서는 모바일 앱 개발자였던 제가 기계학습(머신러닝) 엔지니어로 커리어 전환을 하는 과정에서 개안해낸 학습방안입니다.
 
-My main goal was to find an approach to studying Machine Learning that is mainly hands-on and abstracts most of the Math for the beginner.
-This approach is unconventional because it’s the top-down and results-first approach designed for software engineers.
+접근성을 제일 중점에 두고 이 가이드라인을 작성하였는데, 초보자도 수학적 배경지식 없이 쉽게 따라할 수 있을 것입니다.
+소프트웨어 엔지니어가 만든 소프트웨어 엔지니어들을 위한 기계학습 학습법이기에 매우 실용적이며, 결과중심적인 과정이 될 것입니다.
 
-Please, feel free to make any contributions you feel will make it better.
+개선방안이나 문제점을 발견하시면 언제든지 알려주시기 바랍니다.
 
 ---
 
-## Table of Contents
+## 목차
 
-- [What is it?](#what-is-it)
+- [본 문서에 대하여](#what-is-it)
 - [Why use it?](#why-use-it)
-- [How to use it](#how-to-use-it)
+- [사용방안](#how-to-use-it)
 - [Follow me](#follow-me)
-- [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
-- [About Video Resources](#about-video-resources)
+- [기계학습을 배우고 응용는데엔 박사학위가 필요없습니다](#dont-feel-you-arent-smart-enough)
+- [바다오 자료에 대하여](#about-video-resources)
 - [Prerequisite Knowledge](#prerequisite-knowledge)
 - [The Daily Plan](#the-daily-plan)
-- [Motivation](#motivation)
-- [Machine learning overview](#machine-learning-overview)
+- [동기](#motivation)
+- [기계학습에 대하여](#machine-learning-overview)
 - [Machine learning mastery](#machine-learning-mastery)
-- [Machine learning is fun](#machine-learning-is-fun)
+- [쉽고 재미있는 기계학습](#machine-learning-is-fun)
 - [Inky Machine Learning](#inky-machine-learning)
 - [Machine learning: an in-depth, non-technical guide](#machine-learning-an-in-depth-non-technical-guide)
 - [Stories and experiences](#stories-and-experiences)
@@ -51,9 +49,9 @@ Please, feel free to make any contributions you feel will make it better.
 - [Video Series](#video-series)
 - [MOOC](#mooc)
 - [Resources](#resources)
-- [Becoming an Open Source Contributor](#becoming-an-open-source-contributor)
-- [Games](#games)
-- [Podcasts](#podcasts)
+- [오픈소스 참여자가 되는 방법](#becoming-an-open-source-contributor)
+- [게임](#games)
+- [팟캐스트](#podcasts)
 - [Communities](#communities)
 - [Conferences](#conferences)
 - [Interview Questions](#interview-questions)
