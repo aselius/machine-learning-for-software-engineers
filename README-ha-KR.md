@@ -1,4 +1,4 @@
-# 탑-다운 어프로치를 이용한 소프트웨어 엔지니어를 위한 기계학습 공부법
+# 소프트웨어 엔지니어를 위한 머신러닝 공부법: 하나 하나 차근차근 배워나가는 기계학습
 
 <p align="center">
   <a href="https://github.com/ZuzooVn/machine-learning-for-software-engineers">
@@ -16,50 +16,51 @@
 
 ## 본 문서에 대하여
 
-이 문서는 모바일 앱 개발자였던 제가 기계학습(머신러닝) 엔지니어로 커리어 전환을 하는 과정에서 개안해낸 학습방안입니다.
+이 문서는 모바일 앱 개발자였던 제가 머신러닝(기계학습) 엔지니어로 직종변경을 하는 과정에서 개안해낸 학습방안입니다.
 
-접근성을 제일 중점에 두고 이 가이드라인을 작성하였는데, 초보자도 수학적 배경지식 없이 쉽게 따라할 수 있을 것입니다.
-소프트웨어 엔지니어가 만든 소프트웨어 엔지니어들을 위한 기계학습 학습법이기에 매우 실용적이며, 결과중심적인 과정이 될 것입니다.
+접근성을 제일 중점에 두고 이 가이드라인을 작성하였는데, 초보자들도 큰 수학적 배경지식 없이 쉽게 따라할 수 있을 것입니다.
+소프트웨어 엔지니어가 만든 소프트웨어 엔지니어들을 위한 머신러닝 학습법이기에 매우 실용적이며, 결과중심적인 과정이 될 것입니다.
 
 개선방안이나 문제점을 발견하시면 언제든지 알려주시기 바랍니다.
 
+>본 문서에서 링크되어 있는 자료들의 대부분은 영어로 되어있으며, 한글 번역본 혹은 자막이 제공되어있지 않을 수 있습니다.
 ---
 
 ## 목차
 
-- [본 문서에 대하여](#what-is-it)
-- [Why use it?](#why-use-it)
-- [사용방안](#how-to-use-it)
-- [Follow me](#follow-me)
-- [기계학습을 배우고 응용는데엔 박사학위가 필요없습니다](#dont-feel-you-arent-smart-enough)
-- [바다오 자료에 대하여](#about-video-resources)
-- [Prerequisite Knowledge](#prerequisite-knowledge)
+- [본 문서에 대하여](#본-문서에-대하여)
+- [이 학습방안은 뭐가 다른거죠?](#이-학습방안은-뭐가-다른거죠?)
+- [사용방안](#사용방안)
+- [작자에 대하여](#작자에-대하여)
+- [머신러닝을 배우고 응용는데엔 박사학위가 필요없다구요](#머신러닝을-배우고-응용는데엔-박사학위가-필요없다구요)
+- [링크되어 있는 비디오 자료에 대하여](#링크되어-있는-비디오-자료에-대하여)
+- [필수 선행지식에 대하여](#필수-선행지식에-대하여)
 - [The Daily Plan](#the-daily-plan)
-- [동기](#motivation)
-- [기계학습에 대하여](#machine-learning-overview)
+- [동기부여가 필요할 것 같습니다](#동기부여가-필요할-것-같습니다)
+- [머신러닝에 대한 기초지식](#머신러닝에-대한-기초지식)
 - [Machine learning mastery](#machine-learning-mastery)
-- [쉽고 재미있는 기계학습](#machine-learning-is-fun)
+- [쉽고 재미있는 머신러닝](#쉽고-재미있는-머신러닝)
 - [Inky Machine Learning](#inky-machine-learning)
 - [Machine learning: an in-depth, non-technical guide](#machine-learning-an-in-depth-non-technical-guide)
 - [Stories and experiences](#stories-and-experiences)
-- [Machine Learning Algorithms](#machine-learning-algorithms)
-- [Beginner Books](#beginner-books)
-- [Practical Books](#practical-books)
-- [Kaggle knowledge competitions](#kaggle-knowledge-competitions)
+- [머신러닝 알고리즘들에 대하여](#머신러닝-알고리즘들에-대하여)
+- [초보자를 위한 서적](#초보자를-위한-서적)
+- [실용적이 전문서적](#실용적인-전문서적)
+- [캐글 해결과제들](#캐글-해결과제들)
 - [Video Series](#video-series)
-- [MOOC](#mooc)
-- [Resources](#resources)
+- [MOOC 온라인 공개수업](#MOOC-온라인-공개수업)
+- [기타 자료들](#기타-자료들)
 - [오픈소스 참여자가 되는 방법](#becoming-an-open-source-contributor)
-- [게임](#games)
-- [팟캐스트](#podcasts)
-- [Communities](#communities)
-- [Conferences](#conferences)
-- [Interview Questions](#interview-questions)
+- [머신러닝 괸련 게임](#머신러닝-괸련-게임)
+- [머신러닝 관련 팟캐스트](#머신러닝-괸련-팟캐스트)
+- [머신러닝 관련 커뮤니티](#머신러닝-괸련-팟캐스트)
+- [머신러닝 관련 학회](#머신러닝-괸련-학회)
+- [머신러닝 면접 질문들](#머신러닝-면접-질문들)
 - [My admired companies](#my-admired-companies)
 
 ---
 
-## Why use it?
+## 이 학습방안은 뭐가 다른거죠?
 
 I'm following this plan to prepare for my near-future job: Machine learning engineer. I've been building native mobile applications (Android/iOS/Blackberry) since 2011. I have a Software Engineering degree, not a Computer Science degree. I have an itty-bitty amount of basic knowledge about: Calculus, Linear Algebra, Discrete Mathematics, Probability & Statistics from university.
 Think about my interest in machine learning:
@@ -81,16 +82,16 @@ I think the best way for practice-focused methodology is something like ['practi
 
  It's a long plan. It's going to take me years. If you are familiar with a lot of this already it will take you a lot less time.
 
-## How to use it
-Everything below is an outline, and you should tackle the items in order from top to bottom.
+## 사용방안
+아래 제가 제시하는 학습플랜은 목차대로 처음부터 끝까지 차근차근 배워나가는 것을 추천합니다.
 
-I'm using Github's special markdown flavor, including tasks lists to check progress.
+이 문서는 GitHub(깃허브) 취향의 마크다운을 기반으로 작성되었으며, 본 가이드를 이용하여 머신러닝을 공부하는 유저들이 체크오프 할 수 있는 할일목록(TODO List)들 역시 마크다운으로 작성되어 있습니다.
 
-- [x] Create a new branch so you can check items like this, just put an x in the brackets: [x]
+- [x] 새로운 브랜치를 만들어, 완료한 목록들을 이런 방식으로 괄호안에 x를 기입하여 성과를 트래킹해보세요.
 
-[More about Github-flavored markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)
+[깃허브 취향 마크다운에 대하여](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)
 
-## Follow me
+## 작자에 대하여 
 I'm a Vietnamese Software Engineer who is really passionate and wants to work in the USA.
 
 How much did I work during this plan? Roughly 4 hours/night after a long, hard day at work.
@@ -103,20 +104,19 @@ I'm on the journey.
 |:---:|
 | USA as heck |
 
-## Don't feel you aren't smart enough
-I get discouraged from books and courses that tell me as soon as I open them that multivariate calculus, inferential statistics and linear algebra are prerequisites. I still don’t know how to get started…
+## 머신러닝을 배우고 응용는데엔 박사학위가 필요없다구요
 
-- [What if I’m Not Good at Mathematics](http://machinelearningmastery.com/what-if-im-not-good-at-mathematics/)
-- [5 Techniques To Understand Machine Learning Algorithms Without the Background in Mathematics](http://machinelearningmastery.com/techniques-to-understand-machine-learning-algorithms-without-the-background-in-mathematics/)
-- [How do I learn machine learning?](https://www.quora.com/Machine-Learning/How-do-I-learn-machine-learning-1)
+머신러닝 관한 전문서적을 펼쳐보면 선행대수학, 벡터미적분학, 혹은 추상통계학을 베이스로 한 문단들이 매우 빈번하여 도대체 어디서 부터 학습을 시작하여야 하며, 무엇을 배워야 이런 전문서적들을 좀 더 쉽게 소화할 수 있는지 가늠하기 힘든경우가 많습니다. 아래 링크들을 참고해보세요.
 
-## About Video Resources
+- [수학을 잘 못해도 머신러닝을 배울 수 있을까요?](http://machinelearningmastery.com/what-if-im-not-good-at-mathematics/)
+- [머신러닝 알고리즘들을 수학적 배경없이 이해할 수 있는 5가지 방법들](http://machinelearningmastery.com/techniques-to-understand-machine-learning-algorithms-without-the-background-in-mathematics/)
+- [머신러닝은 어떻게 배워야 하나요?](https://www.quora.com/Machine-Learning/How-do-I-learn-machine-learning-1)
 
-Some videos are available only by enrolling in a Coursera or EdX class. It is free to do so, but sometimes the classes
-are no longer in session so you have to wait a couple of months, so you have no access. I'm going to be adding more videos
-from public sources and replacing the online course videos over time. I like using university lectures.
+## 링크되어 있는 비디오 자료에 대하여
 
-## Prerequisite Knowledge
+링크된 비디오 자료들 중 상당수는 코세라(Coursera) 수업 혹은 매사츄세츠 공대 EdX 강의에서 사용되는 자료들입니다. 이 수업들에 수강신청을 하는 건 비용이 들지 않습니다만, 강의 시기에 따라 제공이 되지 않는 케이스가 있을 수도 있습니다. 이런 경우엔 몇 주에서 길게는 몇 달을 기다려야 이 강의들이 다시 제공이 되는데, 이러한 이유 때문에 차차 이 수업에서 발췌된 링크들을 1년 내내 공개해주는 유튜브 같은 플랫폼에 올라와있는 링크들로 바꾸어 가려 합니다. 물론 대학교 수업 녹화본과 같은 신용성이 있는 비디오들을 링크하겠습니다.
+
+## 필수 선행지식에 대하여
 
 This short section were prerequisites/interesting info I wanted to learn before getting started on the daily plan.
 
@@ -131,10 +131,10 @@ Each subject does not require a whole day to be able to understand it fully, and
 
 Each day I take one subject from the list below, read it cover to cover, take notes, do the exercises and write an implementation in Python or R.
 
-# Motivation
-- [ ] [Dream](https://www.youtube.com/watch?v=g-jwWYX7Jlo)
+# 동기부여가 필요할 것 같습니다
+- [ ] [몽상가가 되어봅시다](https://www.youtube.com/watch?v=g-jwWYX7Jlo)
 
-## Machine learning overview
+## 머신러닝에 대한 기초지식
 - [ ] [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 - [ ] [A Gentle Guide to Machine Learning](https://blog.monkeylearn.com/a-gentle-guide-to-machine-learning/)
 - [ ] [Introduction to Machine Learning for Developers](http://blog.algorithmia.com/introduction-machine-learning-developers/)
@@ -151,7 +151,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [ ] [Python Machine Learning Mini-Course](http://machinelearningmastery.com/python-machine-learning-mini-course/)
 - [ ] [Machine Learning Algorithms Mini-Course](http://machinelearningmastery.com/machine-learning-algorithms-mini-course/)
 
-## Machine learning is fun
+## 쉽고 재미있는 머신러닝
 - [ ] [Machine Learning is Fun!](https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471#.37ue6caww)
 - [ ] [Part 2: Using Machine Learning to generate Super Mario Maker levels](https://medium.com/@ageitgey/machine-learning-is-fun-part-2-a26a10b68df3#.kh7qgvp1b)
 - [ ] [Part 3: Deep Learning and Convolutional Neural Networks](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721#.44rhxy637)
@@ -184,7 +184,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [ ] [How can one become a good machine learning engineer?](https://www.quora.com/How-can-one-become-a-good-machine-learning-engineer)
 - [ ] [A Learning Sabbatical focused on Machine Learning](http://karlrosaen.com/ml/)
 
-## Machine Learning Algorithms
+## 머신러닝 알고리즘들에 대하여
 - [ ] [10 Machine Learning Algorithms Explained to an ‘Army Soldier’](https://www.analyticsvidhya.com/blog/2015/12/10-machine-learning-algorithms-explained-army-soldier/)
 - [ ] [Top 10 data mining algorithms in plain English](https://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/)
 - [ ] [10 Machine Learning Terms Explained in Simple English](http://blog.aylien.com/10-machine-learning-terms-explained-in-simple/)
@@ -193,12 +193,12 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [ ] [Comparing supervised learning algorithms](http://www.dataschool.io/comparing-supervised-learning-algorithms/)
 - [ ] [Machine Learning Algorithms: A collection of minimal and clean implementations of machine learning algorithms](https://github.com/rushter/MLAlgorithms)
 
-## Beginner Books
+## 초보자를 위한 서적
 - [ ] [Data Smart: Using Data Science to Transform Information into Insight 1st Edition](https://www.amazon.com/Data-Smart-Science-Transform-Information/dp/111866146X)
 - [ ] [Data Science for Business: What you need to know about data mining and data­ analytic-thinking](https://www.amazon.com/Data-Science-Business-Data-Analytic-Thinking/dp/1449361323/)
 - [ ] [Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die](https://www.amazon.com/Predictive-Analytics-Power-Predict-Click/dp/1118356853)
 
-## Practical Books
+## 실용적인 전문서적
 - [ ] [Machine Learning for Hackers](https://www.amazon.com/Machine-Learning-Hackers-Drew-Conway/dp/1449303714)
     - [GitHub repository(R)](https://github.com/johnmyleswhite/ML_for_Hackers)
     - [GitHub repository(Python)](https://github.com/carljv/Will_it_Python)
@@ -238,7 +238,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [ ] [Machine Learning with TensorFlow(MEAP)](https://www.manning.com/books/machine-learning-with-tensorflow)
     - [GitHub repository](https://github.com/BinRoot/TensorFlow-Book)
 
-## Kaggle knowledge competitions
+## 캐글(Kaggle) 해결과제들 
 - [ ] [Kaggle Competitions: How and where to begin?](https://www.analyticsvidhya.com/blog/2015/06/start-journey-kaggle/)
 - [ ] [How a Beginner Used Small Projects To Get Started in Machine Learning and Compete on Kaggle](http://machinelearningmastery.com/how-a-beginner-used-small-projects-to-get-started-in-machine-learning-and-compete-on-kaggle)
 - [ ] [Master Kaggle By Competing Consistently](http://machinelearningmastery.com/master-kaggle-by-competing-consistently/)
@@ -266,7 +266,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [ ] [30 Top Videos, Tutorials & Courses on Machine Learning & Artificial Intelligence from 2016](https://www.analyticsvidhya.com/blog/2016/12/30-top-videos-tutorials-courses-on-machine-learning-artificial-intelligence-from-2016/)
 - [ ] [Practical Deep Learning For Coders](http://course.fast.ai/index.html)
 
-## MOOC
+## MOOC 온라인 공개수업
 - [ ] [Udacity’s Intro to Machine Learning](https://www.udacity.com/course/intro-to-machine-learning--ud120)
     - [Udacity Intro to Machine Learning Review](http://hamelg.blogspot.com/2014/12/udacity-intro-to-machine-learning-review.html)
 - [ ] [Udacity’s Supervised, Unsupervised & Reinforcement](https://www.udacity.com/course/machine-learning--ud262)
@@ -286,7 +286,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [ ] [6.S094: Deep Learning for Self-Driving Cars](http://selfdrivingcars.mit.edu/)
 - [ ] [6.S191: Introduction to Deep Learning](http://introtodeeplearning.com/index.html)
 
-## Resources
+## 기타 자료들
 - [ ] [Learn Machine Learning in a Single Month](https://elitedatascience.com/machine-learning-masterclass)
 - [ ] [The Non-Technical Guide to Machine Learning & Artificial Intelligence](https://medium.com/@samdebrule/a-humans-guide-to-machine-learning-e179f43b67a0#.cpzf3a5c0)
 - [ ] [Best practices rule book for Machine Learning engineering from Google](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)
@@ -334,7 +334,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
 - [CreativeAi's Machine Learning](http://www.creativeai.net/?cat%5B0%5D=machine-learning)
 
-## Games
+## 머신러닝 괸련 게임
 - [Halite: A.I. Coding Game](https://halite.io/)
 - [Vindinium: A.I. Programming Challenge](http://vindinium.org/)
 - [General Video Game AI Competition](http://www.gvgai.net/)
@@ -353,7 +353,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - [ ] [cmusatyalab/openface: Face recognition with deep neural networks.](https://github.com/cmusatyalab/openface)
 - [ ] [tensorflow/models/syntaxnet: Neural Models of Syntax.](https://github.com/tensorflow/models/tree/master/syntaxnet)
 
-## Podcasts
+## 머신러닝 괸련 팟캐스트
 - ### Podcasts for Beginners:
     - [Talking Machines](http://www.thetalkingmachines.com/)
     - [Linear Digressions](http://lineardigressions.com/)
@@ -368,7 +368,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - ### Podcasts to think outside the box:
     - [Data Stories](http://datastori.es/)
 
-## Communities
+## 머신러닝 괸련 커뮤니티
 - Quora
     - [Machine Learning](https://www.quora.com/topic/Machine-Learning)
     - [Statistics](https://www.quora.com/topic/Statistics-academic-discipline)
@@ -388,7 +388,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 
 - [KDnuggets](http://www.kdnuggets.com/)
 
-## Conferences
+## 머신러닝 괸련 학회
 - Neural Information Processing Systems ([NIPS](https://nips.cc/))
 - International Conference on Learning Representations ([ICLR](http://www.iclr.cc/doku.php?id=ICLR2017:main&redirect=1))
 - Association for the Advancement of Artificial Intelligence ([AAAI](http://www.aaai.org/Conferences/AAAI/aaai17.php))
@@ -396,7 +396,7 @@ Each day I take one subject from the list below, read it cover to cover, take no
 - IEEE International Conference on Machine Learning and Applications ([ICMLA](http://www.icmla-conference.org/))
 - International Conference on Machine Learning ([ICML](https://2017.icml.cc/))
 
-## Interview Questions
+## 머신러닝 면접 질문들
 - [ ] [How To Prepare For A Machine Learning Interview](http://blog.udacity.com/2016/05/prepare-machine-learning-interview.html)
 - [ ] [40 Interview Questions asked at Startups in Machine Learning / Data Science](https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science)
 - [ ] [21 Must-Know Data Science Interview Questions and Answers](http://www.kdnuggets.com/2016/02/21-data-science-interview-questions-answers.html)
